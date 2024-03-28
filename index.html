@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <title>Horizon Tours</title>
+    <link rel="stylesheet" href="style.css" />  
+  </head>
+  <body>   
+    <div class="banner">
+      
+     
+    <nav> 
+      <center>           
+      <a href="index.html">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact-us">Contact</a>
+      <a href="#services-offered"> Services </a>
+      <a href="#prominent-destinations">Destinations</a>
+      <a href="#frequently-asked-questions">Faqs</a>
+      <a href="#" id="loginButton">Login</a>
+      <a href="#" id="registerButton">Signup</a>
+      <a href="display.php" id="">Fellow Users</a>   
+    </nav>
+  </center>
+    <!-- horizontours logo -->
+
+    <div class="logoimg">
+        <img src="logo.png" alt="logo">
+      </div>
+          
+    <!-- the welcome message is in index.js because of the animation -->
+      <div class="welcome-message">
+        <h1 id="welcome-messageh1"></h1>
+        <p id="welcome-messageP"></p>
+        
+        <button id="bookButton" onclick="showSection()" >Book Now</a></button>
+      </div>
+    </div>
+
+    <!-- about us section -->
+    <section id="about">
+    
+    <h3 class="title">About Horizon Trips and Tours</h3>    
+
+    <div class="about-section">
+      
+      <div class="column left-column">
+        <!-- Content for the left column -->
+        <img src="elephant.jpg" alt="elephant Image" style="width: 100%;"/>
+      </div>
+      <div class="column right-column">
+        <!-- Content for the right column -->
+        <h2>Welcome to Horizon Trips and Tours</h2>
+        
+        <p>Welcome to Horizon Trips and Tours, your gateway to unforgettable adventures across Africa.</p>
+        <p> With Horizon, embark on a journey that transcends conventional tourism, delving deep into the heart of Uganda's natural splendor and the captivating allure of other African destinations.</p>
+        <p> Our passion for exploration is matched only by our commitment to sustainability, as we strive to preserve the pristine environments and vibrant cultures that define this continent.
+
+          <p>At Horizon, we offer meticulously crafted itineraries designed to showcase the diverse landscapes.</p>
+          <p> Discover abundant wildlife, and rich cultural heritage that make Africa truly unique.</p>
+          <p> Whether you dream of trekking through lush rainforests to encounter endangered mountain gorillas, embarking on thrilling safaris across the sweeping savannas in search of the Big Five, or immersing yourself in the rhythm of traditional African music and dance, we have the expertise and resources to turn your dreams into reality.</p>
+         <p> As pioneers in responsible tourism, we work closely with local communities and conservation organizations to ensure that our travels leave a positive impact on both the environment and the people we encounter along the way. </p>
+ </p>
+ <p>Horizon Tours, Your gateway to African adventures</p>
+       
+      </div>
+    </div>
+    </section>
+
+    <section id="services-offered">
+      <h2 class="title">Our Services</h2>
+      <div class="about-section">
+        <div class="column left-column">
+          <!-- Content for the left column -->
+          <img src="boat.jpg" alt="elephant Image" style="width:100%" />
+        </div>
+
+        <div class="column right-column">
+              <h3>Safari Tours</h3>
+              <p>Embark on an unforgettable safari adventure through the iconic national parks and game reserves of Uganda and Kenya. Encounter the Big Five and witness the breathtaking landscapes of the African wilderness.</p>
+          
+              <h3>Cultural Experiences</h3>
+              <p>Immerse yourself in the vibrant cultures and traditions of East Africa with our immersive cultural experiences. Meet local communities, participate in traditional ceremonies, and learn about centuries-old customs and rituals.</p>
+          
+              <h3>Gorilla Trekking</h3>
+              <p>Experience the rare opportunity to trek through the dense forests of Bwindi Impenetrable National Park or Mgahinga Gorilla National Park in search of the majestic mountain gorillas. Witness these incredible primates in their natural habitat.</p>
+          
+              <h3>Easter Special Packages</h3>
+              <p>Check out our exclusive Easter packages for an unforgettable holiday experience:</p>
+              
+                  <li>Easter Gorilla Trekking Adventure</li>
+                  <li>Cultural Safari and Festivals Tour</li>
+                  <li>Easter Wildlife Expedition</li>
+                  </div></div>
+             
+  </section>
+
+
+  <section id="book">
+    <center>
+      
+    <h2 class="title">Book a Tour with Horizon Tours</h2>
+    <p>Please Provide correct details for booking and better service provision</p>
+    <p><i>HORIZON TOURS, "Where luxury is affordable"</i></p>
+
+<form id="bookForm" method="post">
+  <table>
+      <tr>
+          <th>Enter Your Full Name</th>
+          <td><input type="text" name="Tname" id="Tname" required></td>
+      </tr>
+      <tr>
+          <th>Enter your Email</th>
+          <td><input type="email" name="Temail" id="Temail"></td>
+      </tr>
+      <tr>
+          <th>Tour Date</th>
+          <td><input type="date" name="tour_date" id="tour_date" required></td>
+      </tr>
+      <tr>
+          <th>Destination</th>
+          <td><input type="text" name="destination" id="destination"></td>
+      </tr>
+      
+  </table>
+  <button id="bookSubmit" onclick="recordBooking()" >Submit</button>
+</form>
+</center>
+
+  </section>
+
+
+  <section id="prominent-destinations">
+    <h2 class="title">Prominent Ugandan Tourist Destinations</h2>
+    <div class="about-section">
+    <div class="column right-column">
+    
+    <ul>
+        <li>
+            <h3>Murchison Falls National Park</h3>
+            <p>Experience the power and beauty of the Nile River as it thunders through a narrow gorge at Murchison Falls, where visitors can enjoy game drives, boat safaris, and birdwatching.</p>
+        </li>
+        <li>
+            <h3>Queen Elizabeth National Park</h3>
+            <p>Explore diverse ecosystems, including savannah grasslands and wetlands, and spot a variety of wildlife such as elephants, lions, hippos, and birds.</p>
+        </li>
+        <li>
+            <h3>Bwindi Impenetrable National Park</h3>
+            <p>Home to half of the world's population of mountain gorillas, Bwindi offers unforgettable gorilla trekking experiences in its dense rainforests.</p>
+        </li>
+    </ul></div>
+    <div class="column left-column">
+      
+    <img src="cam.jpg" alt="elephant Image" style="width:100%" />
+  </div>
+  
+    </div> 
+
+    
+</section>
+
+
+<section id="frequently-asked-questions">
+  <h2 class="title">Frequently Asked Questions</h2>
+  <div class="about-section">
+      
+    <div class="column left-column">
+      <!-- Content for the left column -->
+      <img src="elph.jpg" alt="elephant Image" style="width: 100%;"/>
+    </div>
+    <div class="column right-column">
+
+    
+    
+        <h3>What types of tours do you offer?</h3>
+        <p>We offer a variety of tours, including:</p>
+        <ul>
+            <li>Safari Tours</li>
+            <li>Cultural Experiences</li>
+            <li>Gorilla Trekking Adventures</li>
+            <li>Easter Special Packages</li>
+        </ul>
+       
+    
+    
+        <h3>How do I book a tour?</h3>
+        <p>Booking a tour is easy:</p>
+        <ol>
+            <li>Visit our website</li>
+            <li>Choose your desired tour package</li>
+            <li>Follow the prompts to complete your booking</li>
+        </ol>
+        
+    
+        <h3>Are your tours suitable for families?</h3>
+        
+        <p>We offer family-friendly activities and accommodations to ensure everyone has a memorable experience.</p>
+    
+         </div></div>
+</section>
+
+
+  
+
+  <section id="contact-us">
+    <center>
+    <form>
+      <h2>Contact Us</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br>
+        <button type="submit">Submit</button>
+        
+    </form>
+  </center>
+   
+</section>
+
+<button id="back-to-top">Scroll Up</button>
+
+
+    <!-- Footer Section -->
+    <footer>
+    <div class="footer">
+      <div class="columns">
+        <div class="column">
+          <h3>Adress Details</h3>
+          <p>
+            Mail:
+            <a href="mailto:bookings@horizontours.com"
+              >bookings@horizontours.com</a>
+          </p>
+          <p>Phone: +256703283529</p>
+          <p>Address: 62 Ntinda, Kampala Uganda.</p>
+        </div>
+
+        <div class="column">
+          <h3>Important Links</h3>
+          <ul>
+
+            <li><a href="#" id="registerButton">Signup</a></li>
+            
+      
+              <li><a href="#contact-us">Contact us</a>
+      
+                <li><a href="#about">About Horizon</a>          
+
+
+              <li><a href="#prominent-destinations">Destinations</a>
+              </li>
+                <li><a href="#services-offered">Our Services</a></li>
+                <li><a href="#frequently-asked-questions">FAQS</a></li>
+                
+        </div>
+
+        <div class="column">
+          <h3>Interact With Us</h3>
+          <p>
+            Contact us through our social
+            media Pages below:
+          </p>
+          <ul class="social-links">
+            <section>
+              <div class="social">
+                <a href="https://wa.me/256703283529">
+                <i class="fab fa-whatsapp"></i></a>
+            
+                <a href="https://www.facebook.com/ronnielee.kclich">
+                <i class="fab fa-facebook"></i>
+              </a>
+            
+              <a href="https://x.com/kclich"> 
+                <i class="fab fa-twitter"></i>
+              </a>
+            
+              <a href="https://instagram.com/kclich.gram?igshid=OGQ5ZDc2ODk2ZA==">
+                <i class="fab fa-instagram"></i>
+              </a>
+              
+              
+              <a href="https://youtube.com/@kclich">
+                <i class="fab fa-youtube"></i>
+              </a>
+
+            
+              <a href="https://www.linkedin.com/in/kclich?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> 
+            <i class="fab fa-linkedin"></i>
+              </a>          
+            
+                         
+                <a href="mailto:ronaldjjuuko7@gmail.com">
+                <i class="fas fa-envelope"></i></a></div>
+            </section>
+        </div>
+       
+      </div>
+      <div class="copyright">
+        <p>&copy; 2024 All rights reserved. Horizon Tours and Travel</p>
+      </div>
+    </div>
+    </footer>
+
+    
+    <!-- the register form -->
+    <div class="register-popup" id="registerForm">
+      
+      <form action="display.php" method="POST" >
+        <h3>Please Enter your details</h3>
+        <label for="firstname">First Name:</label>
+        <input type="text"  id="firstName" name="firstName" required/><br />
+        <label for="lastname" >Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required /><br />
+        <label for="eMail">Email:</label>
+        <input type="email" id="eMail" name="eMail" required /><br />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required/><br />
+
+       <p> Show Password<input type="checkbox" onclick="togglePasswordVisibility()"> </p>
+
+
+        <button type="submit" >REGISTER</button>
+        <button type="button" id="cancelButton">Cancel</button>
+      </form>
+    </div>
+
+    <!-- login form -->
+    <div class="login-pop" id="loginForm">
+      
+      <form  method="post" >
+        <h2>Login</h2>
+       
+        <label for="Mail">Enter Your Email or Username:</label>
+        <input type="email" id="Mail" name="Mail"  required/><br />
+        <label for="Password">Enter Your Password:</label>
+        <input type="password" id="Password" name="Password" required /><br />
+
+        <button type="submit" >LOGIN</button>
+        <button type="button" id="logCancelButton">Cancel</button>
+      </form>
+    </div>  
+
+    <script src="index.js"></script>
+  </body>
+</html>
